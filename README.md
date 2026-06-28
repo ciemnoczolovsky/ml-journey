@@ -13,5 +13,9 @@ This repo is my learning journal. I document here my progress, lessons learned a
 ## Progress
 - 2026-06-21: coding environment set-up, first repo, branch drill
 - 2026-06-22: python basics -> variables, types, f-strings, input/output, lists
-- 2026-06-23: for loop, range(), comprehension list, slices, copying list, tuples, basics of PEP 8 documentation
-- 2026-06-24: dictionary, sets
+- 2026-06-23: for loop, range(), list nesting, s
+- 2026-06-24: lices, copying list, tuples, basics of PEP 8 documentation
+- 2026-06-25: dictionary, sets 
+- 2026-06-26: dictionary, sets continued
+- 2026-06-27: dictionary, sets continued
+- 2026-06-28: conditionals
