@@ -115,7 +115,7 @@ glosary_en_pl = {
     'tuple' : 'krotka',
     'set' : 'zbiór',
     'dictionary' : 'słownik',
-    'list comprehension' : 'zagniezdzenie listy',
+    'nesting' : 'zagniezdzenie listy',
     'loop' : 'pętla',
 }
 
@@ -197,7 +197,7 @@ print(f"Total number of aliens: {len(aliens)}")
 
 for alien in aliens[:10]:
     alien['color'] = 'yellow'
-    alien['points'] = 10,
+    alien['points'] = 10
     alien['speed'] = 'medium'
 
 for alien in aliens:
@@ -301,5 +301,28 @@ for person,places in favourite_places.items():
     for place in places:
         print(f"\t{place}")
 
-#Chapter 6 - Excercise 6.10
+#Chapter 6 - Additional Excercise 1
 print("#Chapter 6 - Excercise 6.10")
+referees_list = ['Chris Foy', 'Michael Oliver','Howard Webb', 'Michael Oliver', 
+            'Christ Cavanah','Howard Webb']
+referees_set = set(referees_list)
+print(f"Number of referees: {len(referees_set)}")
+
+#Chapter 6 - Additional Excercise 2
+teams = ["Lech Poznań", "Legia Warszawa", "Raków Częstochowa", "Pogoń Szczecin"]
+points = [45, 52, 48, 38]
+table = {}
+
+for i in range(len(teams)):
+    table[teams[i]] = points[i]
+
+best_team = None
+best_points = -1
+
+for team in table:
+    if table[team] > best_points:
+        best_points = table[team]
+        best_team = team
+
+print(best_team, best_points)
+

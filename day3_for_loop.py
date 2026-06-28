@@ -5,7 +5,7 @@ teams = ['Arsenal', 'Tottenham', 'Chelsea', 'Manchester United',
 for team in teams:
     print(team)
 
-#Chapter4 - WarmUp - Range + Loop + Comprehension
+#Chapter4 - WarmUp - Range + Loop + Netsing
 print("\n#Chapter4 - WarmUp - Range + Loop")
 for value in range (-2,6):
     print(value)
@@ -30,9 +30,9 @@ print(f"Minimal value of squares list: {min(squares)}")
 print(f"Maximal value of squares list: {max(squares)}")
 print(f"Sum of squares list: {sum(squares)}")
 
-print("Comprehension")
+print("Nesting")
 squares = [value**2 for value in range(1,11)]
-print(f"List comprehension: {squares}")
+print(f"List nesting: {squares}")
 
 #Chapter4 - Exercise 4.3 - count to 20 with for loop
 print("#Chapter4 - Exercise 4.3 - count to 20 with for loop")
@@ -72,9 +72,9 @@ for value in range(1,11):
 for cube in cubes:
     print(cube)
 
-#Chapter4 - Exercise 4.9 - list of ^3 in 1-10 range in list comprehension
+#Chapter4 - Exercise 4.9 - list of ^3 in 1-10 range in list nesting
 print("#Chapter4 - Exercise 4.9 - "
-      "list of ^3 in 1-10 range in ist comprehension")
+      "list of ^3 in 1-10 range in list nesting")
 cubes = [value**3 for value in range(1,11)]
 print(cubes)
 
