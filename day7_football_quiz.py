@@ -1,8 +1,8 @@
 #Excercise 7.6 - fototball quiz
 wrong_answers = 0
 player_score = 0
-loop_iterations=1
-allowed_answers = ['a','b','c','d']
+loop_iterations = 1
+allowed_answers = ['a', 'b', 'c', 'd']
 questions = {
     1:{
         'question': (
