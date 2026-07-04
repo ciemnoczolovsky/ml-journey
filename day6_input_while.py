@@ -69,7 +69,7 @@ while True:
         break
     yellow_cards = input(prompt_yellow_cards)
 
-    if not yellow_cards.isDigit():
+    if not yellow_cards.isdigit():
         print("You need to provide positive number!")
         continue
     yellow_cards_count += int(yellow_cards)
