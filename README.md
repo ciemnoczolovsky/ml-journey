@@ -23,3 +23,4 @@ This repo is my learning journal. I document here my progress, lessons learned a
 - 2026-06-30: intro to while function
 - 2026-07-01: iterating through lists and dicts with while function
 - 2026-07-02: while loop and user input excercises
+- 2026-07-03: simple football quiz app
