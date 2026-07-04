@@ -67,11 +67,15 @@ while True:
     player_input = input(prompt_player)
     if player_input == 'finish':
         break
-    yellow_cards = int(input(prompt_yellow_cards))
-    yellow_cards_count += yellow_cards
+    yellow_cards = input(prompt_yellow_cards)
+
+    if not yellow_cards.isDigit():
+        print("You need to provide positive number!")
+        continue
+    yellow_cards_count += int(yellow_cards)
     player = {
         'name': player_input,
-        'yellow_cards': yellow_cards}
+        'yellow_cards': int(yellow_cards)}
     players.append(player)
 
 print(f"Total number of yellow cards in Premier League: {yellow_cards_count}"
@@ -179,7 +183,7 @@ while True:
         print("You need to provide positive number!")
     elif team in teams:
         print(f"{team} is already added to the League."
-               f"Added {points} points to them.")
+               f" Added {points} points to them.")
         teams[team] += int(points)
     else:
         teams[team] = int(points)
