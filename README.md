@@ -24,3 +24,6 @@ This repo is my learning journal. I document here my progress, lessons learned a
 - 2026-07-01: iterating through lists and dicts with while function
 - 2026-07-02: while loop and user input excercises
 - 2026-07-03: simple football quiz app
+- 2026-07-04: functions indroduction
+- 2026-07-05: functions with default values, building dictionary inside fucntion
+- 2026-07-06: external functions in module.py file, imports
