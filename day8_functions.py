@@ -168,3 +168,5 @@ def build_player(first_name, last_name, **user_info):
 
 player_profile = build_player('Vini','Jr',foot='right',team='Real Madrid')
 print(player_profile)
+
+#Chapter 8 - Excercise 8.12
