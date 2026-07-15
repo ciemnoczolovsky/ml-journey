@@ -5,7 +5,7 @@ def nominated_players(*players):
         print(f"\t{player}")
 
 def calculate_match_points(scored, conceded):
-    """Calculating match points returning 3,1, or 0"""
+    """Calculating match points returning 3, 1, or 0"""
     if scored > conceded:
         return 3
     elif scored < conceded:
@@ -14,7 +14,7 @@ def calculate_match_points(scored, conceded):
         return 1
     
 def build_team_stats(team_name, matches):
-    """Builiding team stats based on provided data: points, goals for,
+    """Building team stats based on provided data: points, goals for,
     goals against, goals ratio."""
     points = 0
     goals_for = 0
