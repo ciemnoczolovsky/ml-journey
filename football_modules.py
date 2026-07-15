@@ -4,11 +4,11 @@ def nominated_players(*players):
     for player in players:
         print(f"\t{player}")
 
-def calculate_match_points(home_goals, away_goals):
+def calculate_match_points(scored, conceded):
     """Calculating match points returning 3,1, or 0"""
-    if home_goals > away_goals:
+    if scored > conceded:
         return 3
-    elif home_goals < away_goals:
+    elif scored < conceded:
         return 0
     else:
         return 1
@@ -22,20 +22,19 @@ def build_team_stats(team_name, matches):
     for match in matches:
         if match.get('home_team') == team_name:
             team_goals = match.get('home_goals')
-            oponent_goals = match.get('away_goals')
+            opponent_goals = match.get('away_goals')
         else:
             team_goals = match.get('away_goals')
-            oponent_goals = match.get('home_goals')
-        points += calculate_match_points(team_goals,oponent_goals)
+            opponent_goals = match.get('home_goals')
+        points += calculate_match_points(team_goals, opponent_goals)
         goals_for += team_goals
-        goals_against += oponent_goals
-    goals_ratio = f"{goals_for}:{goals_against}"
+        goals_against += opponent_goals
     team_details = {
         'team_name': team_name,
         'points': points,
         'goals_for': goals_for,
         'goals_against': goals_against,
-        'goals_ratio': goals_ratio
+        'goal_difference': goals_for - goals_against
     }
 
     return team_details
