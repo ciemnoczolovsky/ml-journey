@@ -5,13 +5,13 @@ from football_modules import *
 #import of all functions: from football_modules import *
 
 #Claude excercise 1
-match_points = calculate_match_points(3,2)
+match_points = calculate_match_points(3, 2)
 print(match_points)
 
-match_points = calculate_match_points(0,2)
+match_points = calculate_match_points(0, 2)
 print(match_points)
 
-match_points = calculate_match_points(2,2)
+match_points = calculate_match_points(2, 2)
 print(match_points)
 
 #Claude excercise 2
@@ -41,5 +41,5 @@ matches = [
         'away_goals': 4
     },
 ]
-team_stats = build_team_stats("Tottenham",matches)
+team_stats = build_team_stats("Tottenham", matches)
 print(team_stats)
